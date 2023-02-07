@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Product</title>
+</head>
+<body>
+
+    <%- include('header') %>
+    <ul> 
+        <% for(let product of products) { %>
+        <li class="product">
+           <h3> <%= product.name %> </h3>
+
+
+            <dl>
+                <dt>Product ID</dt>
+                <dd><%= product.id %></dd>
+                <br>
+
+                <dt>Unit Price</dt>
+                <dd> <%= product.price %> </dd>
+                <br>
+
+                <dt>Description</dt>
+                <dd> <%= product.description %> </dd>
+            </dl>
+            <form class="addToCardForm" action= "/addToCart" method="post"> 
+                <input type="hidden" name="id" value="<%= product.id %>">
+                <input type="submit" value="Add to Card"> 
+            </form>
+        </li>
+        <% } %>
+    </ul>
+
+    <form action="/addToInventory" method="post">
+        <label for="id">Product ID</label>
+        <input id="id" type="text" name="id">
+        <br>
+        <label for="name">Product Name</label>
+        <input id="name" type="text" name="name">
+        <br>
+        <label for="price">Price</label>
+        <input id= "price" type="text" name="price">
+        <br>
+        <label for="desc">Description</label>
+        <input id="desc" type="text" name="description">
+        <br>
+        <label for="button"></label>
+        <input id="button" type="submit" value="Add Product">
+    </form>
+
+    <%- include('footer') %>
+</body>
+</html>

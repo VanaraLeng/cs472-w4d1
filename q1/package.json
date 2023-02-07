@@ -1,0 +1,23 @@
+{
+  "name": "cs472-w4d1",
+  "version": "1.0.0",
+  "description": "CS472-w4d1 Cookie and Session",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanaraLeng/cs472-w4d1.git"
+  },
+  "author": "Vanara Leng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VanaraLeng/cs472-w4d1/issues"
+  },
+  "homepage": "https://github.com/VanaraLeng/cs472-w4d1#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "cs472-w3d5",
+  "version": "1.0.0",
+  "description": "CS472(WAP) Express assignemnt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanaraLeng/cs472-w3d5.git"
+  },
+  "author": "Vanara Leng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VanaraLeng/cs472-w3d5/issues"
+  },
+  "homepage": "https://github.com/VanaraLeng/cs472-w3d5#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}
